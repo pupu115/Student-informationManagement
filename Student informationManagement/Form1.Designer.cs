@@ -75,7 +75,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(276, 324);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(82, 34);
             this.button1.TabIndex = 4;
             this.button1.Text = "登录";
             this.button1.UseVisualStyleBackColor = true;
@@ -101,12 +101,13 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(210, 26);
             this.comboBox1.TabIndex = 6;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(444, 324);
+            this.button2.Location = new System.Drawing.Point(455, 324);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(82, 36);
             this.button2.TabIndex = 7;
             this.button2.Text = "取消";
             this.button2.UseVisualStyleBackColor = true;
@@ -125,7 +126,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(756, 421);
+            this.ClientSize = new System.Drawing.Size(800, 462);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);

@@ -7,32 +7,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace Student_informationManagement
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-            Form3 a = new Form3();
-            this.Hide ();
-            a.ShowDialog();
-            this .Close();
-         
-           
 
         }
-        
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 a = new Form1();
+            this.Hide();
+            a.ShowDialog();
+            this.Close();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

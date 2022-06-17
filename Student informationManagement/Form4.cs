@@ -21,5 +21,35 @@ namespace Student_informationManagement
         {
 
         }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 窗口WToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 层叠ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void 水平平铺ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void 垂直平铺ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

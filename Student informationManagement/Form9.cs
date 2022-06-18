@@ -24,8 +24,8 @@ namespace Student_informationManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string name = this.comboBox1.Text;
-            string sql = string.Format("select * form tb_bj where name like '%{0}%'",name);
+            string name = this.textBox1.Text;
+            string sql = string.Format("select * from tb_bj where name like '%{0}%'",name);
             DataTable a =  DBHelper.Fin(sql);
             dataGridView1.DataSource = a;
             dataGridView1.Columns[0].HeaderText = "学号";

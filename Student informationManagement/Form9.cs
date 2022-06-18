@@ -10,29 +10,24 @@ using System.Windows.Forms;
 
 namespace Student_informationManagement
 {
-    public partial class Form7 : Form
+    public partial class Form9 : Form
     {
-        public Form7()
+        public Form9()
         {
             InitializeComponent();
         }
 
-        private void Form7_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nian = this.comboBox1.Text;
-            string sql = string.Format("select * from tb_bj  where nian = '{0}'", nian);
-            DataTable cha =  DBHelper.Fin(sql);
-            dataGridView1.DataSource = cha;
+            string name = this.comboBox1.Text;
+            string sql = string.Format("select * form tb_bj where name like '%{0}%'",name);
+            DataTable a =  DBHelper.Fin(sql);
+            dataGridView1.DataSource = a;
             dataGridView1.Columns[0].HeaderText = "学号";
             dataGridView1.Columns[1].HeaderText = "姓名";
             dataGridView1.Columns[2].HeaderText = "性别";

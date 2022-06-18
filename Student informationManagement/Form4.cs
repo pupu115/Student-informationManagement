@@ -69,5 +69,19 @@ namespace Student_informationManagement
             Form7 form7 = new Form7();
             form7.ShowDialog();
         }
+
+        private void toolStripButton5_Click_1(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.ShowDialog();
+            
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            Form10 form10 = new Form10();
+            form10.ShowDialog();
+            
+        }
     }
 }

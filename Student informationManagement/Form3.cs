@@ -37,9 +37,16 @@ namespace Student_informationManagement
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         { 
-            Form5 form5 = new Form5();
-            form5.ShowDialog();
+            Form2 form2 = new Form2();
+            form2.ShowDialog();
 
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            Form11 form11 = new Form11();
+            form11.ShowDialog();
         }
     }
 }

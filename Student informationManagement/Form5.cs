@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Student_informationManagement
 {
@@ -35,14 +36,21 @@ namespace Student_informationManagement
             DateTime shijian = DateTime.Now;
             string sql =string.Format( "insert into tb_cj(name,kemu,chengji,shijian)  values('{0}','{1}','{2}','{3}');",name,kemu,chengji,shijian);
              bool a = DBHelper.Eex(sql);
+            
+
             if (a) {
                 if (kemu == "" || chengji == "")
                 {
                     MessageBox.Show("科目和成绩不能为空！");
                 }
-                else {
+                else
+                {
                     MessageBox.Show("添加成功！");
+                    name = this.textBox1.Text = "";
+                    kemu = this.comboBox1.Text = ""; 
+                    chengji = this.textBox2.Text = "";
                 }
+                
             }
             
         }

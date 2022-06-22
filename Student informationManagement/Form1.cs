@@ -25,15 +25,17 @@ namespace Student_informationManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //声明变量 
             string name = this.textBox1.Text;
             string pwd = this.textBox2.Text;
             string lei = this.comboBox1.Text;
-            string sql;
-            sql = string.Format("select * from xuesheng where name ='{0}' and pwd ='{1}' and leixing = '{2}'", name, pwd,lei);
-            DataTable dt = DBHelper.Fin(sql);
+            string sql; 
+            sql = string.Format("select * from xuesheng where name ='{0}' and pwd ='{1}' and leixing = '{2}'", name, pwd,lei);//定义sql语句
+            DataTable dt = DBHelper.Fin(sql);//调用DBHelper类 执行操作语句
             
-                 if (dt.Rows.Count > 0)
+                 if (dt.Rows.Count > 0)//判断count是否大于0 
                 {
+                //判断用户输入的是管理用户 则跳转F4窗口
                 if (lei == "管理用户")
                 {
 
@@ -42,14 +44,16 @@ namespace Student_informationManagement
                     Form4 fom4 = new Form4();
                     fom4.Show();
                 }
-                else {
+                //判断用户输入的是学生用户 则跳转F3窗口
+                else
+                {
                     MessageBox.Show("登陆成功");
                     Hide();
                     Form3 fom3 = new Form3();   
                     fom3.Show();    
                 }
                     
-                }
+                }//否则登录失败
                 else
                 {
                     MessageBox.Show("登录失败，信息有误");
@@ -77,9 +81,13 @@ namespace Student_informationManagement
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.textBox1.Text = "";
-            this.textBox2.Text = "";
             
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

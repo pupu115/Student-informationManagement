@@ -97,7 +97,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Form9";
-            this.Text = "Form9";
+            this.Text = "查询个人信息";
+            this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

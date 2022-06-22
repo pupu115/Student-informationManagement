@@ -42,5 +42,10 @@ namespace Student_informationManagement
         {
             Close();
         }
+
+        private void Form9_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

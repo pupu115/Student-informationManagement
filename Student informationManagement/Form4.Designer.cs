@@ -107,7 +107,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form4";
-            this.Text = " ";
+            this.Text = "管理员界面";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

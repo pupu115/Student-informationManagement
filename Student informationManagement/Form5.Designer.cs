@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,8 +40,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +64,22 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "输入成绩";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(139, 116);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(226, 28);
+            this.textBox2.TabIndex = 8;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(53, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(80, 18);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "学生姓名";
             // 
             // button1
             // 
@@ -164,22 +180,6 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 18);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "学生姓名";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(139, 116);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 28);
-            this.textBox2.TabIndex = 8;
-            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -190,7 +190,7 @@
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form5";
-            this.Text = "CreateFrom";
+            this.Text = "添加成绩界面";
             this.Load += new System.EventHandler(this.Form5_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
